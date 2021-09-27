@@ -45,8 +45,6 @@ $('#save5').click(function() {
 })
 
 function kinda(currentTime, hour, id) {
-    var relTime = moment().hour(hour)
-    console.log(relTime)
     $(id).removeClass('past present future')
     if (currentTime.isBefore(moment().hour(hour), 'hour')) {
         $(id).addClass('future')
