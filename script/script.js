@@ -60,7 +60,7 @@ function kinda(currentTime, hour, id) {
 }
 
 function plannerStyle() {
-    var currentTime = moment().hour(14).minute(0).second(0);
+    var currentTime = moment();
     kinda(currentTime, 9, '#9am');
     kinda(currentTime, 10, '#10am');
     kinda(currentTime, 11, '#11am');
